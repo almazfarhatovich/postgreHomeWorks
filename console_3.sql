@@ -841,7 +841,7 @@ SELECT * FROM cars WHERE brand not ilike 'Toyota'; --14
 SELECT * FROM cars order by price desc limit 10;--15
 SELECT * FROM cars order by year_of_issue desc OFFSET 5 LIMIT 10;--16
 SELECT * FROM cars WHERE year_of_issue  not between 1995 and 2005;--17
-SELECT color, count(*)as cars_count from carsgroup by colororder by count(*) desc;
+SELECT color, count(*)as cars_count from cars group by color order by count(*) desc;
 
 
 -- select case when count(*)>0
